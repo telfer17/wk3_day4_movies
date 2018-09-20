@@ -35,6 +35,18 @@ casting2.save()
 casting3 = Casting.new ({"movie_id" => movie3.id, "star_id" => star3.id, "fee" => 300000})
 casting3.save()
 
+movie3.genre = "action"
+movie3.update()
+
+star1.first_name = "Sly"
+star1.update()
+
+casting2.fee = 250000
+casting2.update()
+
+# movie2.delete()
+# star1.delete()
+# casting3.delete()
 
 
 binding.pry
